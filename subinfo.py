@@ -2,12 +2,14 @@ import re
 import time
 import requests
 import telebot
+import config
 from bs4 import BeautifulSoup
 from datetime import datetime
 from urllib import parse
 from urllib.parse import unquote
 
-API_KEY = "6330486555:AAEiNxgJlGa-Nov512tl-FMYvigkE3v65Lw"
+# API_KEY = "6330486555:AA---------v65Lw"
+API_KEY = config.API_KEY
 bot = telebot.TeleBot(API_KEY)
 
 
