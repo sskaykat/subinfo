@@ -1,3 +1,4 @@
+import os
 import re
 import time
 import requests
@@ -9,7 +10,8 @@ from urllib import parse
 from urllib.parse import unquote
 
 # API_KEY = "6330486555:AA---------v65Lw"
-API_KEY = config.API_KEY
+# API_KEY = config.API_KEY
+API_KEY = os.environ.get('API_KEY', "")
 bot = telebot.TeleBot(API_KEY)
 
 
